@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(7, 1, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+button{
+    /* display: inline-block; */
+    cursor: pointer;
+    /* display: inline; */
+    height: 55px;
+    width: 165px;
+    border: 2px rgb(255, 136, 0) solid;
+    background-color: rgb(7, 1, 20);
+    color: rgb(255, 136, 0);
+    border-radius: 2px;
+    font-weight: lighter;
+    transition: all 0.25s;
+    font-size: large;
+}
+
+button:hover{
+    box-shadow: 0px 0.5em 0.5em -0.4em yellow;
+    border: 2px yellow solid;
+    color: white;
+    transform: translate(0px, -2px);
+    border-radius: 2px;
+}
