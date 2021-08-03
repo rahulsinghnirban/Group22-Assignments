@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+
+#click{
+    display: none;
+}
+
+nav .menu-btn i{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .logo{
+    font-size: 33px;
+    font-family: 'Style Script', cursive;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0px 5px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3 ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 750px){
+    nav .menu-btn i{
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
+    }
+    nav .logo{
+        font-size: 22px;
+        font-weight: 300;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        transition: all 0.3 ease;
+        text-align: center;
+    }
+    #click:checked~ul{
+        left: 0%;
+    }
+    #click:checked~.menu-btn i:before{
+        content: "\e9b8";
+    }
+    nav ul li {
+        margin: 40px 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
+    }
+    
+}
+
+@media screen and (max-width:890px) {
+    nav .logo {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    nav .menu-btn i {
+        font-size: 18px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    nav ul li {
+        margin: 30px 0;
+    }
+    nav ul li a {
+        letter-spacing: 1px;
+        padding: 6px 8px;
+        border-radius: 4px;
+    }
+}
+
+.slider{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 10px;
+    animation-name: sliderAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    /* background-image: url(pics/pic5.jpg); */
+    background-size: 100% 100%;
+}
+
+@keyframes sliderAnim{
+    0%{
+        background-image: url(pics/pic5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    20%{
+        background-image: url(pics/pic2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    40%{
+        background-image: url(pics/pic3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    60%{
+        background-image: url(pics/pic4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    80%{
+        background-image: url(pics/pic5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background-image: url(pics/pic1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.cards{
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    margin: 60px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 5px #e5e5e5;
+    position: relative;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 6rem;
+    font-family:monospace;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+p{
+    position: absolute;
+    top:90%;
+    left:40%;
+    text-align: center;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 110%;
+    text-shadow: 10px 6px 4px #131212;;
+}
+
+.card:hover{
+    transform: scale(110%);
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .contact-left{
+    height: 300px;
+    width: 280px;
+    background-color: violet;
+} */
+
+/* .inputs{
+    display: flex;
+    display: block;    
+    flex-direction: row;
+} */
+
+input{
+    margin: 20px;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.review{
+    height: 100px;
+    width: 370px;
+}
+
+@media screen and (max-width:1260px){
+    .contact{
+        margin-top: 600px;
+    }
+    /* .contact-head{
+        margin-top: 400px;
+    } */
+    
+}
+
+@media screen and (max-width:840px){
+    .contact{
+        margin-top: 2200px;
+    }
+}
+
+.button{
+    /* display: inline-block; */
+    cursor: pointer;
+    color: white;
+    height: 50px;
+    width: 125px;
+    border: 2px rgb(155, 166, 199) solid;
+    background-color: rgb(195, 191, 206);
+    color: rgb(123, 135, 185);
+    border-radius: 2px;
+    font-weight: lighter;
+    transition: all 0.25s;
+    font-size: large;
+    border-radius: 4px;
+}
+
+.button:hover{
+    box-shadow: 0px 0.5em 0.5em -0.4em rgb(179, 179, 162);
+    border: 2px rgb(155, 208, 233) solid;
+    color: white;
+    transform: translate(0px, -2px);
+    border-radius: 2px;
+}
+
+.footer{
+    text-align: center;
+    /* background-color: navajowhite; */
+    height: 20px;
+    padding: 20px;
+}
+
+.footer a{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 443px) {
+    input{
+        margin-left: 100px;
+        padding: 5px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .review{
+        width: 50%;
+        margin-right: 100px;
+    }
+    .button{
+        margin-right: 80px;
+    }
+}
