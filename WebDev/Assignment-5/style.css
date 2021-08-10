@@ -1,0 +1,156 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+} 
+    
+body{
+    background-color: rgb(87, 221, 176);
+}
+
+.nav{
+    /* margin-top: 1000px; */
+    background-color: white;
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+ul{
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    list-style: none;
+    align-items: flex-start;
+    
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+    margin-right: 20px;
+}
+
+a.active{
+    font-weight: bold;
+    color: black;
+}
+
+.greetings{
+
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+}
+
+.pic{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(251, 254, 255);
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
+.text{
+    /* margin-left: 10%; */
+    /* margin-top: 5%; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+.greetings .text{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.special{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 2%;
+}
+
+.greetings .text p{
+    margin-bottom: 5%;
+}
+
+button{
+    padding: 8px;
+    width: 40%;
+    color: lime;
+    background-color: white;
+    border: lime 2px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.about{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.about .text{
+    /* margin-left: 10%; */
+    margin-right: 10%;
+    padding: 20px;
+}
+
+.projects{
+    width: 60%;
+    margin:auto;
+    background-color: white;
+    margin-top: 30px;
+    height: 100%;
+}
+
+.project{
+    padding: 0 20px;    
+}
+
+.project p{
+    border: 2px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+.projects .special{
+    padding: 10px;
+}
+
+.projects .text{
+    padding-bottom: 20px;
+}
+
+.languages{
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.languages .special{
+    padding: 10px;
+}
+
+@media screen and (max-width: 530px) {
+    li a{
+        font-size: 10px;
+    }
+
+    button{
+        width: 60%;
+        font-size: 10px;
+    }
+}
