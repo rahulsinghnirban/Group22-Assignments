@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-image: url(https://c.tenor.com/1KxWSlTlIZMAAAAC/clouds-anime.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    height: 100vh;
+    width: 20vw;
+    /* background-image: url(https://c.tenor.com/1KxWSlTlIZMAAAAC/clouds-anime.gif); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* @media screen and (max-width: 550px) {
+    body{
+        background-image: url(https://images.unsplash.com/photo-1505860125062-3ce932953cf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+} */
+
+form{
+    margin: auto;
+}
+
+.content{
+    padding: 10px;
+    text-align: center;
+}
+
+#input{
+    width: 80%;
+    height: 5vh;
+    border-style: none;
+    border-radius: 2vh;
+    border-bottom-right-radius: 20vh;
+    margin-top: 10%;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;    background: rgb(255,127,180);
+    background: linear-gradient(90deg, rgba(255,127,180,1) 0%, rgba(41,109,189,1) 100%);
+    transition: 1s ease;
+    opacity: .5;
+    padding: 0 2% ;
+    font-weight: bolder;
+}
+
+#input:focus{
+    transform: scale(105%);
+}
+
+#btn{
+    width: 10vh;
+    height: 5vh;
+    border-radius: 2vh;
+    border-top-left-radius: 20vh;
+    border-style: none;
+    cursor: pointer;
+    background: rgb(255,127,180);
+    background: linear-gradient(90deg, rgba(255,127,180,1) 0%, rgba(41,109,189,1) 100%); 
+    box-shadow: 2px 2px 10px rgb(151, 119, 119);   
+    color: rgb(10, 10, 56);
+    font-family: 'Quicksand', sans-serif;    transition: 1s ease;
+    opacity: .5;
+    margin-left: 2%;
+    font-weight: bolder;
+}
+
+#btn:hover{
+    transform: scale(120%);
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    width: 80%;
+    /* background-color: rgb(201, 161, 161); */
+    margin: auto;
+    margin-top: 2%;
+    color: rgb(145, 98, 98);
+    font-size:xx-large;
+}
+
+.des{
+    color: grey;
+}
+
+footer{
+    text-align: center;
+}
